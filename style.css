@@ -3,7 +3,7 @@
 body {
     margin: 0;
     height: 100dvh;
-    background-color: #945034;
+    background-color: blue;
     font-family: "Poppins", sans-serif;
     display: flex;
     flex-direction: column  ;
@@ -77,8 +77,8 @@ p {
 }
 
 .brown {
-    border: 1px solid white;
-    background-color: #945034;
+    background-color: brown;
+    /* background-color: #945034; */
 }
 
 .black {

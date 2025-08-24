@@ -9,7 +9,7 @@
 </head>
 <body>
     <h1>STEP</h1>
-    <img src="images/gemini-brown.png" alt="">
+    <img src="images/gemini-brown.png" alt="" id="display">
     <!-- <img src="/images/gemini-brown.png" alt=""> -->
     <div class="info">
         <h2>STEP v1</h3>
@@ -32,11 +32,19 @@
         </div>
         <h4>Select Color</h4>
         <div class="colors">
-            <div class="circle blue"></div>
-            <div class="circle red"></div>
-            <div class="circle brown"></div>
-            <div class="circle black"></div>
+            <div class="circle blue" onclick="updateShoes('blue')"></div>
+            <div class="circle red" onclick="updateShoes('red')"></div>
+            <div class="circle brown" onclick="updateShoes('brown')"></div>
+            <div class="circle black" onclick="updateShoes('black')"></div>
         </div>
     </div>
+
+    <script>
+        const display = document.getElementById("display");
+        function updateShoes(color) {
+            display.src = `images/gemini-${color}.png`;
+            document.body.style.backgroundColor = `${color}`;
+        }
+    </script>
 </body>
 </html>
